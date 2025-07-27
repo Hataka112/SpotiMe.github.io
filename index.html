@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" /> <!-- русский -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SpotiMe</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <h1>SpotiMe</h1>
+    <div class="left-bg"></div>
+    <div class="right-bg"></div>
+    <div class="right-bg2">
+  <div class="now-playing">
+    <img id="track-image" src="ee.png" alt="обложка" class="track-cover">
+    <div id="lyrics-box" class="lyrics-box">huh</div>
+    <button id="pause-btn" onclick="togglePlayPause()" style="display: none;">⏯</button>
+  </div>
+</div>
+    <div class="bg"></div>
+    <div class="photo-container">
+        <img src="me.jfif" alt="фотка" class="photo">
+    </div>
+    <div class="text">
+        <div class="text-title">Chibi</div>
+    <div class="bio">
+        <div class="text-bio">Hataka112 • Riga, Latvia </div>
+    <div class="biog">
+        <div class="text-biog">Со мной то весело, то застрелится охота.</div>
+    <div class="about">
+        <div class="text-about">About me:</div>
+    <div class="me">
+        <div class="text-me">• Albina
+          <br> • 18 years old
+          <br> • INFP-T
+          <br> • Favorite artists: Stray Kids
+          <br> • Favorite music genre: K-Pop
+        </div>
+      </div>
+    <div class="pad">
+<div class="playlist">
+      <table>
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>Название</th>
+            <th>Альбом</th>
+            <th>⏱</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>
+              <div class="track-info">
+                <img src="vol.jpg" alt="VOLCANO">
+                <div>
+                  <button onclick="playSound('VOLCANO.mp3')">VOLCANO</button><br>
+                  <span class="artist">HAN</span>
+                </div>
+            </td>
+            <td>...</td>
+            <td>3:34</td>
+          </tr>
+          
+         <tr>
+            <td>2</td>
+            <td>
+              <div class="track-info">
+                <img src="Miserable.jfif" alt="Miserable (You & Me)">
+                <div>
+                  <button onclick="playSound('Miserable.mp3')">Miserable (You & Me)</button><br>
+                  <span class="artist">HAN</span>
+                </div>
+            </td>
+            <td>...</td>
+            <td>2:36</td>
+          </tr>
+        <tr>
+            <td>3</td>
+            <td>
+              <div class="track-info">
+                <img src="Scars.jpeg" alt="Scars">
+                <div>
+                  <button onclick="playSound('Scars.mp3')">Scars</button><br>
+                  <span class="artist">Stray Kids</span>
+                </div>
+            </td>
+            <td>The Sound</td>
+            <td>3:50</td>
+          </tr>
+        <tr>
+            <td>4</td>
+            <td>
+              <div class="track-info">
+                <img src="Oh.jpeg" alt="Oh">
+                <div>
+                  <button onclick="playSound('Oh.mp3')">Mixtape : OH</button><br>
+                  <span class="artist">Stray Kids</span>
+                </div>
+            </td>
+            <td>Noeasy</td>
+            <td>3:33</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>
+              <div class="track-info">
+                <img src="Her.jpg" alt="Her">
+                <div>
+                  <button onclick="playSound('Blind.mp3')">Blind Eyes Red</button><br>
+                  <span class="artist">MINNIE</span>
+              </div>
+            </td>
+            <td>HER</td>
+            <td>3:27</td>
+        </tr>
+      <tr>
+            <td>6</td>
+            <td>
+              <div class="track-info">
+                <img src="Come.jfif" alt="Come">
+                <div>
+                  <button onclick="playSound('Come.mp3')">Come Play</button><br>
+                  <span class="artist">Stray Kids,Young Miko, Tom Morello</span>
+              </div>
+            </td>
+            <td> Arcane League of Legends: Season 2</td>
+            <td>2:42</td>
+        </tr>
+      <tr>
+            <td>7</td>
+            <td>
+              <div class="track-info">
+                <img src="Whip.png" alt="Whip">
+                <div>
+                  <button onclick="playSound('Whip.mp3')">Whiplash</button><br>
+                  <span class="artist">aespa</span>
+              </div>
+            </td>
+            <td>Whiplash</td>
+            <td>3:11</td>
+        </tr>
+        
+      <tr>
+            <td>8</td>
+            <td>
+              <div class="track-info">
+                <img src="run.png" alt="Yum">
+                <div>
+                  <button onclick="playSound('Runners.mp3')">Runners</button><br>
+                  <span class="artist">Stray Kids</span>
+              </div>
+            </td>
+            <td>Ate</td>
+            <td>3:17</td>
+        </tr>
+      <tr>
+            <td>9</td>
+            <td>
+              <div class="track-info">
+                <img src="Ruby.png" alt="Ruby">
+                <div>
+                  <button onclick="playSound('Extra.mp3')">ExtraL</button><br>
+                  <span class="artist">JENNIE(feat. Doechii)</span>
+              </div>
+            </td>
+            <td>Ruby</td>
+            <td>2:48</td>
+        </tr>
+      <tr>
+            <td>10</td>
+            <td>
+              <div class="track-info">
+                <img src="Я.jpg" alt="Я">
+                <div>
+                  <button onclick="playSound('Я.mp3')">Я ночью плачу </button><br>
+                  <span class="artist">СТИНТ, Матис</span>
+              </div>
+            </td>
+            <td>Такова жизнь</td>
+            <td>2:34</td>
+        </tr>
+      <tr>
+            <td>11</td>
+            <td>
+              <div class="track-info">
+                <img src="мило.jpg" alt="мило материшься">
+                <div>
+                  <button onclick="playSound('мило.mp3')">мило материшься</button><br>
+                  <span class="artist">volhey</span>
+              </div>
+            </td>
+            <td>мило материшься</td>
+            <td>2:01</td>
+        </tr>
+  </div>
+  <a href="https://steamcommunity.com/profiles/76561198398423863/" target="_blank" class="link">steam </a>
+  <a href="https://open.spotify.com/user/2zictcrorhyt8mh4tc2all4m1?si=6d16c3ca41934e5c" target="_blank" class="link2">spotify </a>
+  <a href="https://t.me/chibi006" target="_blank" class="link3">telegram </a>
+  <script src="script.js"></script>
+</body>
+</html>

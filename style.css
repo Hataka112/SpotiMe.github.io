@@ -1,0 +1,244 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #121212;
+    color: white;
+    margin: 0px;
+    padding: 10px;
+}
+
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+    padding: 20px;
+    text-align: center;
+    margin-top: 20px; 
+}
+
+.playlist {
+    position: absolute;
+    top: -66px; 
+    left: 40px;
+    width: 40vw;
+    height: 45vw; 
+    max-width: 50%;
+    max-height: 100vh;
+    background: #593b3b;
+    border-radius: 50px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+    z-index: 0;
+    padding-top: 15px;
+    padding-left: 25px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  color: white;
+  font-size: 14px;
+}
+
+th, td {
+  padding: 10px;
+  text-align: left;
+  height: 40px;
+  position: relative;
+}
+
+th {
+  color: #b3b3b3;
+  font-weight: normal;
+}
+
+.track-info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.track-info img {
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.track-info button {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 14px;
+  cursor: pointer;
+  padding: 0;
+  text-align: left;
+}
+
+.artist {
+  color: #a7a7a7;
+  font-size: 12px;
+}
+
+.right-bg {
+    position: absolute;
+    top: 125px;
+    right: 40px;
+    width: 40vw;
+    height: 25vw; /* квадрат */
+    max-width: 50%;
+    max-height: 100vh;
+    background: #593b3b;
+    border-radius: 50px;
+    z-index: 0;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+    
+}
+.right-bg2 {
+    position: absolute;
+    bottom: 40px; 
+    right: 40px;
+    width: 40vw; /* ширина */
+    height: 25vw; /* квадрат */
+    max-width: 50%;
+    max-height: 35vh;
+    background: #593b3b;
+    border-radius: 50px;
+    z-index: 0;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+    
+}
+.now-playing {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 30px;
+  height: 100%;
+  overflow-y: auto;
+  box-sizing: border-box;
+  text-align: center;
+  gap: 15px;
+}
+
+.track-cover {
+  width: 240px;
+  height: 240px;
+  object-fit: cover;
+  border-radius: 50px;
+  margin-bottom: 0;
+  border: 4px solid #121212;
+  background-color: #121212;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+  padding: 1px;
+  color: white;
+}
+
+.lyrics-box {
+  color: white;
+  font-size: 14px;
+  line-height: 1.4;
+  max-width: 60%;
+  max-width: 300px;
+  word-wrap: break-word;
+  padding: 20px;
+}
+
+#pause-btn {
+  position: absolute;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+  outline: none;
+  box-shadow: none;  
+  right: 205px;
+  bottom: 100px;
+
+}
+.photo {
+    position: absolute;
+    width: 350px;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 50px; 
+    border: 4px solid #121212;
+    z-index: 120;
+    top: 157px;
+    right: 315px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+}
+
+.text {
+    position: relative;
+    z-index: 100;
+    margin-top: 70px;
+}
+
+.text-title {
+    position: absolute;
+    z-index: 100;
+    margin-top: -5px;  
+    font-size: 2.5em;
+    margin-left: 1363px; 
+}
+
+.text-bio {
+    position: absolute;
+    z-index: 1011;
+    top: 50px;  
+    font-size: 1em;
+    margin-left: 1365px; 
+}
+
+.text-biog {
+    position: absolute;
+    z-index: 1012;
+    top: 75px;  
+    font-size: 12px;
+    color: #a7a7a7;
+    margin-left: 1365px; 
+}
+.text-about {
+    position: absolute;
+    z-index: 1013;
+    top: 115px;  
+    font-size: 14px;
+    margin-left: 1367px; 
+    font-weight: bold;
+}
+.text-me {
+    position: absolute;
+    z-index: 1013;
+    top: 140px;  
+    font-size: 14px;
+    margin-left: 1370px; 
+}
+
+.link {
+
+    position: absolute;
+    z-index: 1014;
+    top: 325px;  
+    font-size: 14px;
+    margin-left: 1305px; 
+    color: #ffffff; 
+}
+
+.link2 {
+
+    position: absolute;
+    z-index: 1014;
+    top: 325px;  
+    font-size: 14px;
+    margin-left: 1350px; 
+    color: #ffffff; 
+}
+
+.link3 {
+
+    position: absolute;
+    z-index: 1014;
+    top: 325px;  
+    font-size: 14px;
+    margin-left: 1400px; 
+    color: #ffffff; 
+}
